@@ -19,7 +19,7 @@ export default function UploadSection() {
     formData.append("n", n);
 
     try {
-      const response = await axios.post("http://localhost:8000/upload", formData);
+      const response = await axios.post("http:/ngram-analyzer.onrender.com/upload", formData);
       setPreview(response.data.preview);
       setError("");
     } catch (err) {
