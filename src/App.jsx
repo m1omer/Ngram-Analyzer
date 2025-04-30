@@ -23,8 +23,14 @@ export default function App() {
             />
           }
         />
-        <Route path="/stats" element={<Stats ngrams={ngrams} />} />
-        <Route path="/predict" element={<Predict />} />
+        <Route
+          path="/stats"
+          element={<Stats ngrams={ngrams} previewText={previewText} />}
+        />
+        <Route
+          path="/predict"
+          element={<Predict ngrams={ngrams} previewText={previewText} />}
+        />
       </Routes>
     </Router>
   );
