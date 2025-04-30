@@ -13,15 +13,15 @@ export default function Stats() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/stats')
+    axios.get('http://ngram-analyzer.onrender.com/stats')
       .then(res => setStats(res.data))
       .catch(err => setError('Please upload a PDF to view insights.'));
 
-    axios.get('http://localhost:8000/top-words')
+    axios.get('http://ngram-analyzer.onrender.com/top-words')
       .then(res => setTopWords(res.data.top_words.slice(0, 10).map(([word, count]) => ({ word, count }))))
       .catch(err => console.log('Top words fetch error'));
 
-    axios.get('http://localhost:8000/sentence-starters')
+    axios.get('http://ngram-analyzer.onrender.com/sentence-starters')
       .then(res => {
         setSentenceStarters(res.data.top_starters.map(([word, count]) => ({ word, count })));
       })
