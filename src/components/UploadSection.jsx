@@ -19,7 +19,12 @@ export default function UploadSection() {
     formData.append("n", n);
 
     try {
-      const response = await axios.post("http://ngram-analyzer.onrender.com/upload", formData);
+      const response = await axios.post("https://ngram-analyzer.onrender.com/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data"
+  }
+});
+
       setPreview(response.data.preview);
       setError("");
     } catch (err) {
