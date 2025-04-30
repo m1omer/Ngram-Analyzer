@@ -10,12 +10,12 @@ export default function Predict() {
     setError(null);
     setPrediction(null);
     try {
-      const predictRes = await axios.post("http://ngram-analyzer.onrender.com/predict", new URLSearchParams({ context }));
+      const predictRes = await axios.post("https://ngram-analyzer.onrender.com/predict", new URLSearchParams({ context }));
       const { predicted_word, probability } = predictRes.data;
 
       let surprisal_bits = null;
       try {
-        const surprisalRes = await axios.post("http://ngram-analyzer.onrender.com/surprisal", new URLSearchParams({
+        const surprisalRes = await axios.post("https://ngram-analyzer.onrender.com/surprisal", new URLSearchParams({
           context,
           word: predicted_word
         }));
