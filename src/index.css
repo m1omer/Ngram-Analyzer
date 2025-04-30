@@ -1,0 +1,122 @@
+/* GLOBAL STYLES */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+}
+
+.description, .sub-description {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.card, .centered-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.field-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #475569;
+  margin: 0.5rem 0 0.25rem;
+  display: block;
+}
+
+.button-alt {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-alt:hover {
+  background-color: #4f46e5;
+}
+
+.preview-box {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.kpi-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.error-text {
+  color: red;
+  margin-top: 1rem;
+}
